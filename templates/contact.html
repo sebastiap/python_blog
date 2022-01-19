@@ -1,0 +1,66 @@
+{% include "header.html" %}
+
+  <!-- Page Header -->
+  <header class="masthead" style="background-image: url('{{ url_for('static', filename='img/contact-bg.jpg')}}')">
+    <div class="overlay"></div>
+    <div class="container">
+      <div class="row">
+        <div class="col-lg-8 col-md-10 mx-auto">
+          <div class="page-heading">
+            <h1>Contactame!</h1>
+            <span class="subheading">Algo para comentar? No dejes que la timidez te gane!</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </header>
+
+  <!-- Main Content -->
+  <div class="container">
+    <div class="row">
+      <div class="col-lg-8 col-md-10 mx-auto">
+        <p>Deseas contactarme? </p>
+        <p>Completa el siguiente formulario para dejarme un mensaje y contestare en breve. Estoy deseoso de escuchar sus comentarios!</p>
+        <!-- Contact Form - Enter your email address on line 19 of the mail/contact_me.php file to make this form work. -->
+        <!-- WARNING: Some web hosts do not allow emails to be sent through forms to common mail hosts like Gmail or Yahoo. It's recommended that you use a private domain email address! -->
+        <!-- To use the contact form, your site must be on a live web host with PHP! The form will not work locally! -->
+        <form name="sentMessage" id="contactForm" novalidate>
+          <div class="control-group">
+            <div class="form-group floating-label-form-group controls">
+              <label>Nombre</label>
+              <input type="text" class="form-control" placeholder="Nombre" id="name" required data-validation-required-message="Por favor , ingrese su nombre">
+              <p class="help-block text-danger"></p>
+            </div>
+          </div>
+          <div class="control-group">
+            <div class="form-group floating-label-form-group controls">
+              <label>Email</label>
+              <input type="email" class="form-control" placeholder="Tu Email" id="email" required data-validation-required-message="Por favor , ingrese su email.">
+              <p class="help-block text-danger"></p>
+            </div>
+          </div>
+          <div class="control-group">
+            <div class="form-group col-xs-12 floating-label-form-group controls">
+              <label>Telefono</label>
+              <input type="tel" class="form-control" placeholder="Telefono" id="phone" required data-validation-required-message="Por favor , ingrese su numero telefonico">
+              <p class="help-block text-danger"></p>
+            </div>
+          </div>
+          <div class="control-group">
+            <div class="form-group floating-label-form-group controls">
+              <label>Tu mensaje...</label>
+              <textarea rows="5" class="form-control" placeholder="Mensaje" id="message" required data-validation-required-message="Por favor , ingrese un mensaje."></textarea>
+              <p class="help-block text-danger"></p>
+            </div>
+          </div>
+          <br>
+          <div id="success"></div>
+          <button type="submit" class="btn btn-primary" id="sendMessageButton">Enviar</button>
+        </form>
+      </div>
+    </div>
+  </div>
+
+  <hr>
+
+  {% include "footer.html" %}

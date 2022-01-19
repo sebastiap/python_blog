@@ -1,0 +1,31 @@
+{% include "header.html" %}
+
+  <!-- Page Header -->
+  <header class="masthead" style="background-image: url({{ url_for('static', filename='img/about-bg.jpg')}})">
+    <div class="overlay"></div>
+    <div class="container">
+      <div class="row">
+        <div class="col-lg-8 col-md-10 mx-auto">
+          <div class="page-heading">
+            <h1>Sobre Mi</h1>
+            <span class="subheading">La razon de crear este Blog</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </header>
+
+  <!-- Main Content -->
+  <div class="container">
+    <div class="row">
+      <div class="col-lg-8 col-md-10 mx-auto">
+        <p>Este Blog nace como un mapa de aprendisaje propio al mismo tiempo que un lugar para compartir aprendizaje. </p>
+        <p>Durante mi carrera en muchos momentos aprendi y desaprendi cosas que por falta de practica quedaron en algun lugar de mi cabeza. Con suerte, ahora quedaran en un lugar de este blog.</p>
+        <p>Blog desarrollado en Python utilizando Flask, Jinja, SQL y muchas ganas!</p>
+      </div>
+    </div>
+  </div>
+
+  <hr>
+
+  {% include "footer.html" %}
