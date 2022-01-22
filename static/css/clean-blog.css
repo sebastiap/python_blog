@@ -340,6 +340,10 @@ header.masthead .post-heading .meta a {
   }
 }
 
+.post-preview-extra {
+  color: red;
+}
+
 .post-preview > a {
   color: #212529;
 }
